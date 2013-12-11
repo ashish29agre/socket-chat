@@ -14,8 +14,13 @@ and open the template in the editor.
     <body class="container">
         <h1>Socket Chat App</h1>
 
+        <input type="text" class="form-control" name="chat_user_name" id="chat_user_name"/>
+        <button class="btn btn-default btn-lg btn-block" onclick="joinChat()">Join Chat</button>
+
+
         <div id="output"></div>
+        <input type="text" class="form-control" name="chat_user_msg" id="chat_user_msg"/>
+        <button class="btn btn-default btn-lg btn-block" onclick="sendMessage()">Send Message to server</button>
         <script type="text/javascript" src="websocket.js"></script>
-        <button class="btn" onclick="sendMessage()">Send Message to server</button>
     </body>
 </html>
